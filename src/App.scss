@@ -1,0 +1,113 @@
+$text-color: #fbf1c7;
+$background-color: #282828;
+
+html {
+  background-color: $background-color;
+  color: $text-color;
+  max-width: 600px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.input-holder {
+  width: 100%;
+}
+
+input {
+  height: 30pt;
+  width: 70%;
+  background-color: $background-color;
+  border: 1px rgb(100, 100, 100) solid;
+  border-right: none;
+  border-radius: 5pt 0 0 5pt;
+  padding: 0 5pt 0 5pt;
+  color: $text-color;
+}
+
+button {
+  height: 30pt;
+  width: 30%;
+
+  background-color: $background-color;
+  color: $text-color;
+
+  border-radius: 0 5pt 5pt 0;
+  border: 1px solid rgb(100, 100, 100);
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #1d2021;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #3c3836;
+  cursor: pointer;
+}
+
+hr {
+  color: $text-color;
+}
+
+h1 {
+  font-weight: 400;
+  padding: 10pt 0 0 0;
+}
+
+.container {
+  padding: 20pt;
+}
+
+.features {
+  padding: 5pt;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .feature-container {
+    width: 450px;
+    padding: 10pt;
+    margin: 10pt;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10pt;
+
+    .subtitle {
+      color: rgb(76, 76, 76);
+      font-weight: 200;
+    }
+
+    p {
+      font-weight: 600;
+      // text-decoration: underline;
+    }
+
+    code {
+      border: 1px solid rgb(41, 41, 41);
+      background-color: rgb(50, 50, 50);
+      border-radius: 5pt;
+      padding: 3pt;
+    }
+
+    hr {
+      margin: 5pt 0 5pt 0;
+    }
+
+    .search-results {
+      width: 100%;
+
+      .search-item {
+        width: 100%;
+        padding: 3pt;
+      }
+    }
+  }
+}
